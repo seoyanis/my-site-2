@@ -47,6 +47,10 @@ export function initHome($w, { wixWindowFrontend, wixData } = {}) {
   wire(IDS.hero.logo, e => addClasses(e, CLASSES.hero), IDS.hero.logo + ':hero')
   wire(T.repeater, e => addClasses(e, CLASSES.cluster), T.repeater + ':class')
 
+  // 1b. Orbit rings: spin via global.css (.orbit), the team ring counter-rotates.
+  wire(M.orbit, e => addClasses(e, CLASSES.orbit), M.orbit + ':orbit')
+  wire(T.orbit, e => addClasses(e, CLASSES.orbit, CLASSES.ringReverse), T.orbit + ':orbit')
+
   // 2. Services repeater: "0n" numbers, icon from the CMS URL, card reveal with a stagger.
   wire(V.repeater, rep => rep.onItemReady(($item, data, index) => {
     const d = data || {}

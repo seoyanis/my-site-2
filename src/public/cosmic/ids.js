@@ -29,6 +29,7 @@ export const IDS = {
     label: '#text12',
     title: '#text13',
     paragraphs: ['#text14', '#text15'],
+    orbit: '#vectorImage2',      // orbit ring (Vector Art)
   },
   services: {
     section: '#secServices',
@@ -48,6 +49,7 @@ export const IDS = {
     label: '#text21',
     title: '#text22',
     paragraphs: ['#text25', '#text26'],
+    orbit: '#vectorImage3',      // orbit ring (Vector Art), spins in reverse
     repeater: '#repeater2',      // team repeater (dataset "teamData")
     dataset: '#teamData',
     item: '#box2',               // repeater item container (planet item)
@@ -93,6 +95,8 @@ export const CLASSES = {
   reveal: 'reveal',            // hidden until the element enters the viewport
   revealed: 'is-in',           // added by page code when the element is in view
   hero: 'hero-logo',           // plays a fade-up on load
+  orbit: 'orbit',              // spinning orbit ring (global.css)
+  ringReverse: 'ring-2',       // slower, counter-rotating ring
 }
 
 export const WARMUP_SERVICES_KEY = 'services'
