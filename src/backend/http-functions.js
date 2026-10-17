@@ -37,3 +37,23 @@ export async function get_seedStatus() {
     team: t.items.map(i => [i.order, i.title, i.role, Boolean(i.photo)]),
   });
 }
+
+// GET /_functions/uploadUrl?path=/cosmic/icons&mime=image/png&type=image
+// Returns a one-file Media Manager upload URL (valid 1 day); the client then PUTs the bytes to it with ?filename=.
+import { mediaManager } from 'wix-media-backend';
+
+export async function get_uploadUrl(request) {
+  const q = request.query || {};
+  const path = q.path || '/cosmic';
+  const mime = q.mime || 'image/png';
+  const type = q.type || 'image';
+  try {
+    const { uploadUrl } = await mediaManager.getUploadUrl(path, {
+      mediaOptions: { mimeType: mime, mediaType: type },
+      metadataOptions: { isPrivate: false, isVisitorUpload: false },
+    });
+    return json({ uploadUrl });
+  } catch (e) {
+    return serverError({ body: { error: String(e) } });
+  }
+}
