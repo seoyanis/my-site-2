@@ -3,55 +3,55 @@ export const SERVICES = [
   {
     "title": "Production loan/Investment",
     "description": "Investment funds are allocated to cover production costs and are secured by pre-sale agreements, in which distributors commit in advance to purchase the completed film—providing a clear path to revenue and mitigating risk",
-    "icon": "",
+    "icon": "wix:image://v1/be8a0f_58462498efd44c558d1a470ce7249be8~mv2.png/production-loan-investment.png#originWidth=450&originHeight=600",
     "order": 1
   },
   {
     "title": "Media loan/Investment",
     "description": "Strategic collaborations with established producers and talent to develop, finance, and deliver projects with strong creative vision and proven commercial appeal.",
-    "icon": "",
+    "icon": "wix:image://v1/be589e_af6d3c0ec90b4e318ac6f2d3121d9ad4~mv2.png/media-loan-investment.png#originWidth=450&originHeight=600",
     "order": 2
   },
   {
     "title": "First out financing investment",
     "description": "Capital deployed toward production costs is secured by unsold international territory estimates, independently valued by a reputable foreign sales agent—offering a data-backed basis for risk assessment and potential return.",
-    "icon": "",
+    "icon": "wix:image://v1/746230_f4cedb98cee046a2a4ed37193e54d8d1~mv2.png/first-out-financing-investment.png#originWidth=450&originHeight=600",
     "order": 3
   },
   {
     "title": "Finishing funds",
     "description": "Financing provided when a project has fully utilized its existing resources and requires additional capital to complete production, post-production, or meet delivery requirements—ensuring the project reaches the finish line and becomes market-ready.",
-    "icon": "",
+    "icon": "wix:image://v1/f88b98_430c2e45cb1e46b6ac4bfb86acadafc6~mv2.png/finishing-funds.png#originWidth=450&originHeight=600",
     "order": 4
   },
   {
     "title": "Library loans/Investment",
     "description": "A loan structured to finance the acquisition of a film or television library, or to leverage existing owned content as collateral to fund the acquisition, development, or production of new film and television projects—unlocking asset value to drive portfolio growth.",
-    "icon": "",
+    "icon": "wix:image://v1/64538d_fcc3849a2de545208594f5999226fcd8~mv2.png/library-loans-investment.png#originWidth=450&originHeight=600",
     "order": 5
   },
   {
     "title": "Tax credit loan/Investment",
     "description": "A loan secured by state and/or international tax incentives, offering a low-risk financing structure backed by government-issued rebates or credits",
-    "icon": "",
+    "icon": "wix:image://v1/97b128_ec2360625df94257823cddf52204816b~mv2.png/tax-credit-loan-investment.png#originWidth=450&originHeight=600",
     "order": 6
   },
   {
     "title": "Ultimate loan",
     "description": "Post-theatrical financing provided based on the film’s projected net revenues across all distribution channels, offering investors a revenue-backed opportunity once the film has launched in theaters.",
-    "icon": "",
+    "icon": "wix:image://v1/2783d9_085a95838e394439bfac1ef19697bc87~mv2.png/ultimate-loan.png#originWidth=450&originHeight=600",
     "order": 7
   },
   {
     "title": "Bridge loan",
     "description": "A short-term bridge loan designed to meet a producer’s immediate production funding needs—often tied to talent commitments—until long-term financing, such as a bank loan, is secured.",
-    "icon": "",
+    "icon": "wix:image://v1/39cafe_c29ff3aba11a475f98c998bac42aa22d~mv2.png/bridge-loan.png#originWidth=450&originHeight=600",
     "order": 8
   },
   {
     "title": "P&A financing",
     "description": "A short-term bridge loan designed to meet a producer’s immediate production funding needs—often tied to talent commitments—until long-term financing, such as a bank loan, is secured.",
-    "icon": "",
+    "icon": "wix:image://v1/3eb0c6_7bae4589b87745eb8e483d677b1352bc~mv2.png/panda-financing.png#originWidth=450&originHeight=600",
     "order": 9
   }
 ];
@@ -60,49 +60,49 @@ export const TEAM = [
     "title": "Erik Martin",
     "role": "President",
     "bio": "<p>over the past 25 years Erik has been producing directing and writing both documentary and narrative films. He specializes in creative producing in the action, fantasy and horror genres and has a keen understanding of world building in those areas.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/083313_136185df9d8e4ae78ac796b862ef9e82~mv2.jpg/erik-martin.jpg#originWidth=600&originHeight=600",
     "order": 1
   },
   {
     "title": "David Ellender",
     "role": "CEO",
     "bio": "<p>Former CEO of Universal Studios TV And former CEO of Fremantle - Fremantle is one of the most successful TV production Studios in history.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/983acd_b0ff1a73ea624593a9d598fd79516c07~mv2.jpg/david-ellender.jpg#originWidth=600&originHeight=600",
     "order": 2
   },
   {
     "title": "Olivia Jannesson",
     "role": "Chief Investor Relations",
     "bio": "<p>Olivia is a Swedish actress and voice over artist, residing in London. She completed her Bachelor of Arts with merit and distinction in Cape Town, South Africa, where she also began her acting career. She was awarded Best Actor for her role as Eve in the short film Artificial Paradise, which was screened at Silwerskerm Film Festival in 2018.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/a66b52_bb58322f61344a46b4d94db4ac089da3~mv2.jpg/olivia-jannesson.jpg#originWidth=600&originHeight=600",
     "order": 3
   },
   {
     "title": "Justin Creamer",
     "role": "Head of Investor Relations",
     "bio": "<p>Few executives combine capital strategy, relationship-driven dealmaking and cross-sector business development as naturally as Justin Creamer. Across his work in investment, private capital, entertainment and strategic partnerships, he has focused on connecting investors, operators and management teams around opportunities with long-term value creation potential. His career is defined by one consistent thread: aligning capital, execution and strategic vision across evolving industries.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/ff82ee_e4a1251ac3f84a5b8572702977b3f48a~mv2.jpg/justin-creamer.jpg#originWidth=600&originHeight=600",
     "order": 4
   },
   {
     "title": "Richard Mewis",
     "role": "Chief Production Officer",
     "bio": "<p>With over 30 years of experience across television and film, Richard is a highly respected Producer known for delivering award-winning content around the globe.</p><p>Whether developing original ideas or leading large-scale international productions, Richard brings a deep understanding of the industry, strong creative leadership, and a proven track record of success.</p><p>With and a reputation for excellence and a passion for compelling, high-quality productions, Richard combines creative vision with expert production management to bring exceptional stories to life by collaborating with top-tier talent and production partners to create bold, impactful content that resonates with audiences worldwide, earning critical acclaim and industry accolades.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/37d895_c8d53d716ace42f599db4d8000f38941~mv2.jpg/richard-mewis.jpg#originWidth=600&originHeight=600",
     "order": 5
   },
   {
     "title": "Yanis Nebti",
     "role": "Chief Creative Officer",
     "bio": "<p>With over a decade of experience in VFX and 3D animation, he has played a key role in bringing high-profile stories to life across film and streaming, including The Batman, The Lion King (2019), and Marvel’s What If…? on Disney+. Throughout his career, he has collaborated with leading studios and platforms such as Marvel Studios, The Walt Disney Company, Netflix, and Amazon Prime Video.</p><p>He has overseen and coordinated global teams of artists, managing complex pipelines and delivering world-class visual storytelling at scale, with a strong focus on quality, efficiency, and creative excellence.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/51f83f_aacc425ffed74f9b9707c03d54c39d30~mv2.jpg/yanis-nebti.jpg#originWidth=600&originHeight=600",
     "order": 6
   },
   {
     "title": "Zack Winfield",
     "role": "Chief Development Officer",
     "bio": "<p>Zack began his career as a playwright, before joining NDF International - at the time one of the UK's most successful production companies, with 16 Academy Award nominations to its name - where he rose to become Head of Development, overseeing a slate spanning multiple genres and international markets.</p><p>He later co-founded Native State, an independent production company focused on commercially ambitious storytelling for the global market, with credits including Last Passenger, City of Tiny Lights, and Show Dogs.</p><p>Alongside his producing career, Zack has worked extensively in development and creative strategy. He served for several years as Consultant Head of Film at Milkwood Productions and is a sought-after script consultant, working with writers and directors across film and television. He also mentors emerging talent on a postgraduate Master's programme.</p><p>His experience spans the full arc of a film's life - from sourcing and developing IP through to production and international distribution - with particular focus on the creative and commercial decisions that determine whether a project gets made and finds its audience.</p>",
-    "photo": "",
+    "photo": "wix:image://v1/733b81_d3cfa0a3a0ba49a6bf803a7d0b177363~mv2.jpg/zack-winfield.jpg#originWidth=600&originHeight=600",
     "order": 7
   }
 ];
