@@ -63,7 +63,7 @@ export function initHome($w, { wixWindowFrontend, wixData } = {}) {
   // 3. Team repeater: planet classes, portrait fade-in, name and role reveal, MemberBio lightbox.
   wire(T.repeater, rep => rep.onItemReady(($item, data, index) => {
     const d = data || {}
-    try { addClasses(el($item, T.item), CLASSES.planetItem, planetClass(d.order)) } catch (_) {}
+    try { addClasses(el($item, T.item), CLASSES.planetItem, CLASSES.planetFloat, planetClass(d.order)) } catch (_) {}
     try { revealOn(el($item, T.name), 'reveal-d1') } catch (_) {}
     try { revealOn(el($item, T.role), 'reveal-d2') } catch (_) {}
     try {

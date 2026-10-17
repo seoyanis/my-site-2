@@ -41,10 +41,10 @@
 .orbit.ring-1 { animation-duration: 110s; }
 .orbit.ring-2 { animation-duration: 240s; animation-direction: reverse; }
 
-/* Planet float: a gentle vertical bob for items carrying .planet-float. */
+/* Planet float: a gentle vertical bob. It animates the individual translate property, so the arc transform on .planet-N still applies. */
 @keyframes planet-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -12px; }
 }
 .planet-float { animation: planet-float 8s ease-in-out infinite; }
 

@@ -86,6 +86,7 @@ export const CLASSES = {
   cluster: 'kc-cluster',
   planetItem: 'planet-item',
   planetDisc: 'planet-disc',
+  planetFloat: 'planet-float',
   svcItem: 'svc-item',
   svcIcon: 'svc-icon',
   backToTop: 'back-to-top',
