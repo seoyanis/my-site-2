@@ -1,0 +1,107 @@
+/* Cosmic Studios — global stylesheet for the Wix Studio site.
+   Palette: #000000, #FFFFFF, #C29B1C and rgba() alpha variants only. No em/rem, no blend modes.
+   Velo ids are never DOM ids on the published site, so every selector targets a custom class.
+   Custom properties (D11) are unverified in Wix global.css: tokens below are reference only;
+   every rule uses literal palette values so it works without var() support. */
+
+/* Palette tokens — reference / future use; never relied on by a rule. */
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --gold: #C29B1C;
+  --black-35: rgba(0, 0, 0, 0.35);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --gold-45: rgba(194, 155, 28, 0.45);
+}
+
+/* Scroll reveal: page code adds .reveal, and .is-in once the element enters the viewport. */
+.reveal {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.is-in { opacity: 1; transform: none; }
+.reveal-d1 { transition-delay: 0.12s; }
+.reveal-d2 { transition-delay: 0.24s; }
+.reveal-d3 { transition-delay: 0.36s; }
+
+/* Hero logo: fades up once on page load. */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+.hero-logo { animation: fade-up 1.4s ease both; }
+
+/* Orbit rings: one slow full rotation; inner ring faster, outer ring slower and reversed. */
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.orbit { animation: orbit-spin 160s linear infinite; transform-origin: 50% 50%; }
+.orbit.ring-1 { animation-duration: 110s; }
+.orbit.ring-2 { animation-duration: 240s; animation-direction: reverse; }
+
+/* Planet float: a gentle vertical bob for items carrying .planet-float. */
+@keyframes planet-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.planet-float { animation: planet-float 8s ease-in-out infinite; }
+
+/* Team cluster: 4 + 3 layout on a 1073px row (24px gaps, ~250px columns); upper row staggers 0 / -24 / -24 / 0. */
+.planet-item { transition: transform 0.6s ease; }
+.planet-1 { transform: translate(0, 0); }
+.planet-2 { transform: translate(0, -24px); }
+.planet-3 { transform: translate(0, -24px); }
+.planet-4 { transform: translate(0, 0); }
+/* Lower row of three centred under four: half a column plus half a gap = 137px to the right. */
+.planet-5 { transform: translate(137px, 0); }
+.planet-6 { transform: translate(137px, -24px); }
+.planet-7 { transform: translate(137px, 0); }
+
+/* Planet discs: circular portraits that fade in once in view, then lift and glow gold on hover. */
+.planet-disc {
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1.1s ease, transform 0.5s ease, box-shadow 0.5s ease;
+}
+.planet-disc.is-in { opacity: 1; }
+.planet-disc:hover { transform: scale(1.09); box-shadow: 0 0 40px rgba(194, 155, 28, 0.45); }
+
+/* Header / menu links: a 1px gold underline grows from the left over 0.7s (tolerant of Wix's nested span/a markup). */
+.kc-ui a { position: relative; text-decoration: none; }
+.kc-ui a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #C29B1C;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s ease;
+}
+.kc-ui a:hover::after, .kc-ui:hover a::after { transform: scaleX(1); }
+.menu-link:hover, .menu-link:hover * { color: #C29B1C; }
+
+/* Footer: mail links and Back to top turn gold on hover (descendant selector covers nested spans). */
+.mail:hover, .mail:hover * { color: #C29B1C; }
+.back-to-top:hover, .back-to-top:hover * { color: #C29B1C; }
+
+/* Diagonal band between sections. */
+.divider { clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%); }
+
+/* Reduced motion: no reveals, no intro, no orbit or float, no planet transitions. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal.is-in { transition: none; transform: none; }
+  .hero-logo { animation: none; }
+  .orbit, .planet-float { animation: none; }
+  .planet-disc, .planet-item { transition: none; }
+}
+
+/* Short viewports: tighten the team cluster so the section still fits (classes only — Velo ids are not DOM ids). */
+@media (max-height: 760px) {
+  .kc-cluster { margin-top: 0; margin-bottom: 0; }
+}

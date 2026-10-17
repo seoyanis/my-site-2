@@ -1,10 +1,5 @@
-// API Reference: https://www.wix.com/velo/reference/api-overview/introduction
-// “Hello, World!” Example: https://learn-code.wix.com/en/article/hello-world
+import wixWindowFrontend from 'wix-window-frontend';
+import wixData from 'wix-data';
+import { initHome } from 'public/cosmic/home.js';
 
-$w.onReady(function () {
-    // Write your JavaScript here
-
-    // To select an element by ID use: $w('#elementID')
-
-    // Click 'Preview' to run your code
-});
+$w.onReady(() => initHome($w, { wixWindowFrontend, wixData }));
