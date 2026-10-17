@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COSMIC STUDIOS</title>
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Space+Grotesk:wght@400;500&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="top">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"></button>
+    <nav class="top__links">
+      <a class="is-gold" href="https://docsend.com/v/xhnz6/cosmicfantasydeck" target="_blank" rel="noopener">PITCH DECK</a>
+      <a href="mailto:info@cosmicstudiospictures.com?subject=Cosmic%20Studios%20%7C%20Introductory%20meet%20and%20greet">Let’s talk</a>
+    </nav>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="menu__backdrop"></div>
+    <div class="menu__panel" data-lenis-prevent>
+      <nav>
+        <ul class="menu__list">
+          <li><a href="#home"><small>01</small>Home</a></li>
+          <li><a href="#studio"><small>02</small>Our Studio</a></li>
+          <li><a href="#mission"><small>03</small>Our Mission</a></li>
+          <li><a href="#services"><small>04</small>Our services</a></li>
+          <li><a href="#team"><small>05</small>Our Team</a></li>
+        </ul>
+      </nav>
+      <div class="menu__foot"><a href="mailto:info@cosmicstudiospictures.com">info@cosmicstudiospictures.com</a></div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO + STUDIO: one pinned stage on desktop -->
+    <section class="hero" id="home">
+      <div class="stage">
+        <div class="sun"><video src="assets/video/hero-ring.mp4" poster="assets/img/hero-poster.jpg" muted autoplay loop playsinline></video></div>
+      <svg class="orbits" viewBox="-750 -750 1500 1500" aria-hidden="true" focusable="false">
+        <g class="spin"><ellipse rx="520" ry="200" transform="rotate(-16)" stroke-opacity=".38"/></g>
+        <g class="spin spin--slow"><ellipse rx="700" ry="300" transform="rotate(12)" stroke-opacity=".26"/><circle cx="700" cy="0" r="3" fill="#C29B1C" transform="rotate(12)"/></g>
+        <g class="spin spin--fast"><circle r="400" stroke-opacity=".2"/><circle cx="400" cy="0" r="2.5" fill="#C29B1C"/></g>
+      </svg>
+        <div class="sun-ring" aria-hidden="true"></div>
+        <h1 class="lockup"><span class="lockup__a">COSMIC</span> <span class="lockup__b">STUDIOS</span></h1>
+        <button class="hint" type="button"><span>Scroll</span><i></i></button>
+      </div>
+      <div class="studio" id="studio">
+        <div class="studio__inner">
+          <p class="label" data-enter="label">01<i class="label__line"></i></p>
+          <h2 class="title" data-enter="title">Our <em>STUDIO</em></h2>
+          <div class="copy" data-enter="copy"><p>Cosmic Studios is an independent film finance and production company specializing in fantasy and science-fiction cinema. The studio acquires and develops proven genre IP — stories with established audiences and franchise potential — and brings them to the screen through a disciplined, partnership-driven production model.</p><p>Founded on the principle that the best stories become enduring worlds, Cosmic Studios pairs ambitious, audience-first filmmaking with a transparent investment structure built to protect and reward those who help bring these worlds to life.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="section mission" id="mission">
+    <svg class="orbits" data-enter="orbits" viewBox="-550 -550 1100 1100" aria-hidden="true" focusable="false">
+      <g class="spin spin--slow"><ellipse rx="500" ry="190" transform="rotate(-24)" stroke-opacity=".32"/></g>
+      <g class="spin"><circle r="360" stroke-opacity=".18"/><circle cx="360" cy="0" r="3" fill="#C29B1C"/></g>
+    </svg>
+      <div class="wrap split">
+        <div>
+          <p class="label" data-enter="label">02<i class="label__line"></i></p>
+          <h2 class="title" data-enter="title">OUR <em>MISSION</em></h2>
+        </div>
+        <div class="copy" data-enter="copy"><p>Building Blockbuster Films and Franchises in the, action, spy, science fiction and horror genres is our primary focus. By adopting an agile and collaborative business model, we aim to leverage external resources, partnerships, and cutting-edge technologies to streamline our operations and distribution across all platforms.</p><p>Our ability to scale projects on the backs of the most successful actors, producers, directors, and writers in the industry sets us apart from other companies and gives us a competitive advantage</p></div>
+      </div>
+    </section>
+
+    <!-- SERVICES: orbital carousel -->
+    <section class="services" id="services">
+      <div class="services__stage">
+        <div class="services__head"><div class="wrap">
+          <p class="label" data-enter="label">03<i class="label__line"></i></p>
+          <h2 class="title" data-enter="title">OUR <em>SERVICES</em></h2>
+        </div></div>
+        <div class="orbit3d">
+          <ul class="ring">
+        <li class="card" data-index="0">
+          <div class="card__top"><img class="card__icon" src="assets/icons/production-loan-investment.png" alt="" loading="lazy"><span class="card__num">01</span></div>
+          <h3 class="card__title">Production loan/Investment</h3>
+          <p class="card__desc">Investment funds are allocated to cover production costs and are secured by pre-sale agreements, in which distributors commit in advance to purchase the completed film—providing a clear path to revenue and mitigating risk</p>
+        </li>
+        <li class="card" data-index="1">
+          <div class="card__top"><img class="card__icon" src="assets/icons/media-loan-investment.png" alt="" loading="lazy"><span class="card__num">02</span></div>
+          <h3 class="card__title">Media loan/Investment</h3>
+          <p class="card__desc">Strategic collaborations with established producers and talent to develop, finance, and deliver projects with strong creative vision and proven commercial appeal.</p>
+        </li>
+        <li class="card" data-index="2">
+          <div class="card__top"><img class="card__icon" src="assets/icons/first-out-financing-investment.png" alt="" loading="lazy"><span class="card__num">03</span></div>
+          <h3 class="card__title">First out financing investment</h3>
+          <p class="card__desc">Capital deployed toward production costs is secured by unsold international territory estimates, independently valued by a reputable foreign sales agent—offering a data-backed basis for risk assessment and potential return.</p>
+        </li>
+        <li class="card" data-index="3">
+          <div class="card__top"><img class="card__icon" src="assets/icons/finishing-funds.png" alt="" loading="lazy"><span class="card__num">04</span></div>
+          <h3 class="card__title">Finishing funds</h3>
+          <p class="card__desc">Financing provided when a project has fully utilized its existing resources and requires additional capital to complete production, post-production, or meet delivery requirements—ensuring the project reaches the finish line and becomes market-ready.</p>
+        </li>
+        <li class="card" data-index="4">
+          <div class="card__top"><img class="card__icon" src="assets/icons/library-loans-investment.png" alt="" loading="lazy"><span class="card__num">05</span></div>
+          <h3 class="card__title">Library loans/Investment</h3>
+          <p class="card__desc">A loan structured to finance the acquisition of a film or television library, or to leverage existing owned content as collateral to fund the acquisition, development, or production of new film and television projects—unlocking asset value to drive portfolio growth.</p>
+        </li>
+        <li class="card" data-index="5">
+          <div class="card__top"><img class="card__icon" src="assets/icons/tax-credit-loan-investment.png" alt="" loading="lazy"><span class="card__num">06</span></div>
+          <h3 class="card__title">Tax credit loan/Investment</h3>
+          <p class="card__desc">A loan secured by state and/or international tax incentives, offering a low-risk financing structure backed by government-issued rebates or credits</p>
+        </li>
+        <li class="card" data-index="6">
+          <div class="card__top"><img class="card__icon" src="assets/icons/ultimate-loan.png" alt="" loading="lazy"><span class="card__num">07</span></div>
+          <h3 class="card__title">Ultimate loan</h3>
+          <p class="card__desc">Post-theatrical financing provided based on the film’s projected net revenues across all distribution channels, offering investors a revenue-backed opportunity once the film has launched in theaters.</p>
+        </li>
+        <li class="card" data-index="7">
+          <div class="card__top"><img class="card__icon" src="assets/icons/bridge-loan.png" alt="" loading="lazy"><span class="card__num">08</span></div>
+          <h3 class="card__title">Bridge loan</h3>
+          <p class="card__desc">A short-term bridge loan designed to meet a producer’s immediate production funding needs—often tied to talent commitments—until long-term financing, such as a bank loan, is secured.</p>
+        </li>
+        <li class="card" data-index="8">
+          <div class="card__top"><img class="card__icon" src="assets/icons/panda-financing.png" alt="" loading="lazy"><span class="card__num">09</span></div>
+          <h3 class="card__title">P&amp;A financing</h3>
+          <p class="card__desc">A short-term bridge loan designed to meet a producer’s immediate production funding needs—often tied to talent commitments—until long-term financing, such as a bank loan, is secured.</p>
+        </li>
+          </ul>
+        </div>
+        <div class="services__controls">
+          <button class="ctrl ctrl--prev" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg><span class="sr-only">Previous</span></button>
+          <span class="counter"><b>01</b> / 09</span>
+          <button class="ctrl ctrl--next" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg><span class="sr-only">Next</span></button>
+        </div>
+        <p class="sr-only services__live" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- divider plate -->
+    <div class="band" aria-hidden="true"><img src="assets/img/blue-band.jpg" alt="" loading="lazy"></div>
+
+    <!-- TEAM: planets -->
+    <section class="section team" id="team">
+    <svg class="orbits" data-enter="orbits" viewBox="-800 -800 1600 1600" aria-hidden="true" focusable="false">
+      <g class="spin spin--slow"><ellipse rx="640" ry="250" transform="rotate(-10)" stroke-opacity=".3"/></g>
+      <g class="spin"><ellipse rx="780" ry="330" transform="rotate(8)" stroke-opacity=".2"/><circle cx="780" cy="0" r="3" fill="#C29B1C" transform="rotate(8)"/></g>
+    </svg>
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="label" data-enter="label">04<i class="label__line"></i></p>
+            <h2 class="title" data-enter="title">OUR <em>TEAM</em></h2>
+          </div>
+          <div class="copy" data-enter="copy"><p>Our leadership team covers every aspect of the production process, as well as comprehensively encompassing the world of business and finance.</p><p>With over 60 years of combined production experience and billions in combined investments secured, we bring a wealth of knowledge and real-world involvement to the table.</p></div>
+        </div>
+        <ul class="cluster">
+        <li class="planet" style="--x:22%;--y:38%;--d:17.4;--float:9s;--delay:0s" data-speed="0.5">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/erik-martin.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">Erik Martin</span>
+          </button>
+          <div class="planet__bio" hidden>over the past 25 years Erik has been producing directing and writing both documentary and narrative films. He specializes in creative producing in the action, fantasy and horror genres and has a keen understanding of world building in those areas.</div>
+        </li>
+        <li class="planet" style="--x:46%;--y:22%;--d:12.8;--float:11s;--delay:-3s" data-speed="1.1">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/david-ellender.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">David Ellender</span>
+          </button>
+          <div class="planet__bio" hidden>Former CEO of Universal Studios TV And former CEO of Fremantle - Fremantle is one of the most successful TV production Studios in history.</div>
+        </li>
+        <li class="planet" style="--x:66%;--y:44%;--d:15.2;--float:10s;--delay:-5s" data-speed="0.8">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/olivia-jannesson.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">Olivia Jannesson</span>
+          </button>
+          <div class="planet__bio" hidden>Olivia is a Swedish actress and voice over artist, residing in London. She completed her Bachelor of Arts with merit and distinction in Cape Town, South Africa, where she also began her acting career. She was awarded Best Actor for her role as Eve in the short film Artificial Paradise, which was screened at Silwerskerm Film Festival in 2018.</div>
+        </li>
+        <li class="planet" style="--x:86%;--y:24%;--d:11.4;--float:12s;--delay:-1s" data-speed="1.3">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/justin-creamer.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">Justin Creamer</span>
+          </button>
+          <div class="planet__bio" hidden>Few executives combine capital strategy, relationship-driven dealmaking and cross-sector business
+development as naturally as Justin Creamer. Across his work in investment, private capital, entertainment
+and strategic partnerships, he has focused on connecting investors, operators and management teams
+around opportunities with long-term value creation potential. His career is defined by one consistent
+thread: aligning capital, execution and strategic vision across evolving industries.</div>
+        </li>
+        <li class="planet" style="--x:36%;--y:74%;--d:12.2;--float:9.5s;--delay:-7s" data-speed="0.9">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/richard-mewis.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">Richard Mewis</span>
+          </button>
+          <div class="planet__bio" hidden>With over 30 years of experience across television and film, Richard is a highly respected Producer known for delivering award-winning content around the globe. 
+
+Whether developing original ideas or leading large-scale international productions, Richard brings a deep understanding of the industry, strong creative leadership, and a proven track record of success. 
+
+With and a reputation for excellence and a passion for compelling, high-quality productions, Richard combines creative vision with expert production management to bring exceptional stories to life by collaborating with top-tier talent and production partners to create bold, impactful content that resonates with audiences worldwide, earning critical acclaim and industry accolades.</div>
+        </li>
+        <li class="planet" style="--x:58%;--y:80%;--d:11.4;--float:10.5s;--delay:-2s" data-speed="1.2">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/yanis-nebti.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">Yanis Nebti</span>
+          </button>
+          <div class="planet__bio" hidden>With over a decade of experience in VFX and 3D animation, he has played a key role in bringing high-profile stories to life across film and streaming, including The Batman, The Lion King (2019), and Marvel’s What If…? on Disney+. Throughout his career, he has collaborated with leading studios and platforms such as Marvel Studios, The Walt Disney Company, Netflix, and Amazon Prime Video.
+ 
+He has overseen and coordinated global teams of artists, managing complex pipelines and delivering world-class visual storytelling at scale, with a strong focus on quality, efficiency, and creative excellence.</div>
+        </li>
+        <li class="planet" style="--x:82%;--y:66%;--d:13.6;--float:11.5s;--delay:-4s" data-speed="0.7">
+          <button class="planet__btn" type="button" aria-haspopup="dialog">
+            <span class="planet__body"><img class="planet__img" src="assets/team/zack-winfield.jpg" alt="" loading="lazy"></span>
+            <span class="planet__name">Zack Winfield</span>
+          </button>
+          <div class="planet__bio" hidden>Zack began his career as a playwright, before joining NDF International - at the time one of the UK's most successful production companies, with 16 Academy Award nominations to its name - where he rose to become Head of Development, overseeing a slate spanning multiple genres and international markets.
+
+He later co-founded Native State, an independent production company focused on commercially ambitious storytelling for the global market, with credits including Last Passenger, City of Tiny Lights, and Show Dogs.
+
+Alongside his producing career, Zack has worked extensively in development and creative strategy. He served for several years as Consultant Head of Film at Milkwood Productions and is a sought-after script consultant, working with writers and directors across film and television. He also mentors emerging talent on a postgraduate Master's programme.
+
+His experience spans the full arc of a film's life - from sourcing and developing IP through to production and international distribution - with particular focus on the creative and commercial decisions that determine whether a project gets made and finds its audience.</div>
+        </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: landscape with depth layers -->
+  <footer class="footer" id="contact">
+    <div class="footer__scene" aria-hidden="true">
+      <video class="footer__sky" src="assets/video/footer-landscape.mp4" poster="assets/img/footer-poster.jpg" muted autoplay loop playsinline></video>
+      <div class="footer__ground"></div>
+      <div class="footer__veil"></div>
+      <div class="footer__horizon"><img class="footer__logo" src="assets/img/logo.png" alt=""></div>
+    </div>
+    <div class="footer__content">
+      <div class="footer__emails">
+        <a href="mailto:erik@cosmicstudiospictures.com">erik@cosmicstudiospictures.com</a>
+        <a href="mailto:info@cosmicstudiospictures.com">info@cosmicstudiospictures.com</a>
+      </div>
+      <ul class="footer__addresses">
+        <li>633 W 5th St Los Angeles, CA 90071, United States</li>
+        <li>1 University Ave, Toronto ON, M5J 2P1</li>
+        <li>4441 Collins Ave, Miami Beach, FL 33140, United States</li>
+      </ul>
+      <button class="to-top" type="button">Back to top <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+    </div>
+  </footer>
+
+  <dialog class="member" id="member" aria-labelledby="member-name">
+    <div class="member__inner" tabindex="-1" data-lenis-prevent>
+      <button class="member__close" type="button"><span class="sr-only">Close</span></button>
+      <img class="member__img" src="" alt="">
+      <div class="member__body">
+        <p class="label member__label"><span class="member__num">01</span><i class="label__line"></i></p>
+        <h3 class="member__name" id="member-name"></h3>
+        <p class="member__bio"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
